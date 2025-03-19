@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Palastine Flag</title>
+    <link rel="shortcut icon" href="./flag.jpg" type="image/svg">
+</head>
+<body>
+    <script>
+        // Body Element Properties
+        let = body = document.querySelector('body');
+        body.style.margin = '0';
+        body.style.padding = '0';
+        // =========== End Of Body Element Style ===========
+
+        // Container Element For All Flag`s Colors
+        let container = document.createElement('div');
+        container.style.width = '100%';
+        container.style.height = '100vh';
+        container.style.position = 'relative';
+        body.appendChild(container);
+        // =========== End Of Container Element ===========
+
+        // Black Color Element
+        let black = document.createElement('div');
+        black.style.width = '100%';
+        black.style.height = '33.333%';
+        black.style.backgroundColor = 'black';
+        black.style.position = 'absolute';
+        black.style.top = '0';
+        container.appendChild(black);
+        // =========== End Of White Color Element ===========
+
+        // Green Color Element
+        let green = document.createElement('div');
+        green.style.width = '100%';
+        green.style.height = '33.333%';
+        green.style.backgroundColor = 'green';
+        green.style.position = 'absolute';
+        green.style.bottom = '0';
+        container.appendChild(green);
+        // =========== End Of Red Color Element ===========
+
+        // Red Rectangle Element
+        let rectangle = document.createElement('div');
+        rectangle.style.position = 'absolute';
+        rectangle.style.borderStyle = 'solid';
+        rectangle.style.borderColor = 'transparent transparent transparent red';
+        rectangle.style.borderWidth = '50vh';
+        container.appendChild(rectangle);
+        // =========== End Of Red Rectangle Element ===========
+        //```
+    </script>
+</body>
+</html>
